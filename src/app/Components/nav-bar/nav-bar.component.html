@@ -1,0 +1,45 @@
+
+<mat-toolbar color="primary">
+    <button mat-icon-button  (click)="toggleSidenav()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>Angular CRUD App</span>
+    <span class="spacer"></span>
+    <button mat-icon-button [mat-menu-trigger-for]="userMenu">
+        <mat-icon>account_circle</mat-icon>
+    </button>
+    <mat-menu #userMenu ="matMenu">
+        <button mat-menu-item><mat-icon>person</mat-icon>
+        <span>Profile</span>
+        </button>
+        <button mat-menu-item><mat-icon>exit_to_app</mat-icon>
+        <span>Logout</span>
+        </button>
+    </mat-menu>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="over" [opened]="sidenavOpen">
+        <mat-nav-list>
+            <a mat-list-item routerLink="/dashboard" (click)="closeSidenav()">
+                <mat-icon>dashboard</mat-icon>
+                <span class="nav-label">Dashboard</span>
+            </a>
+            <a mat-list-item routerLink="/users" (click)="closeSidenav()">
+            <mat-icon>people</mat-icon>
+            <span class="nav-label">Users</span>
+          </a>
+          <mat-divider></mat-divider>
+          <a mat-list-item>
+            <mat-icon>settings</mat-icon>
+            <span class="nav-label">Settings</span>
+          </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="content">
+            <app-dashboard></app-dashboard>
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

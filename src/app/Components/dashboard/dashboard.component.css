@@ -1,0 +1,77 @@
+
+.dashboard-container {
+    padding:16px;
+}
+
+ .stats-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .stat-card {
+      flex: 1;
+      min-width: 200px;
+    }
+    .stat-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
+    .stat-icon mat-icon {
+      color: white;
+    }
+    .blue {
+      background-color: #1976d2;
+    }
+    .green {
+      background-color: #4caf50;
+    }
+    .red {
+      background-color: #f44336;
+    }
+    .stat-value {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 16px;
+    }
+    .charts-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .chart-card {
+      flex: 1;
+      min-width: 300px;
+    }
+    .role-bar {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .role-name {
+      width: 80px;
+    }
+    .role-bar-container {
+      flex: 1;
+      height: 20px;
+      background-color: #f5f5f5;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .role-bar-fill {
+      height: 100%;
+    }
+    .role-count {
+      width: 40px;
+      text-align: right;
+      margin-left: 8px;
+    }
+    .activity-time {
+      color: rgba(0, 0, 0, 0.54);
+      font-size: 12px;
+    }

@@ -1,0 +1,46 @@
+
+.container {
+      padding: 16px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .filter-container {
+      margin-bottom: 20px;
+    }
+    .mat-form-field {
+      width: 100%;
+      max-width: 500px;
+    }
+    .table-container {
+      position: relative;
+      overflow: auto;
+    }
+    table {
+      width: 100%;
+    }
+    .mat-column-actions {
+      width: 120px;
+      text-align: center;
+    }
+    .mat-column-status {
+      width: 150px;
+    }
+    .inactive-row {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+    .Admin {
+      background-color: #1976d2;
+      color: white;
+    }
+    .Manager {
+      background-color: #ff9800;
+      color: white;
+    }
+    .User {
+      background-color: #4caf50;
+      color: white;
+    }
